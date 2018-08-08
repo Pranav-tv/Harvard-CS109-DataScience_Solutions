@@ -10,15 +10,15 @@ import numpy as np
 
 def simulate_prizedoor(nsim):
     
-    return np.array(np.random.randint(10,size = nsim))
+    return np.array(np.random.randint(3,size = nsim))
 
 
 def simulate_guess(nsim):
 
-    return np.array(np.random.randint(10,size = nsim))
+    return np.array(np.random.randint(3,size = nsim))
 
 def goat_door(prizedoors,guesses):
-    choices = set((0,1,2,3,4,5,6,7,8,9))
+    choices = set((0,1,2))
     numbers = []
     for x,y in zip(prizedoors, guesses):
         numbers.append((choices - set((x,y))).pop())
@@ -26,7 +26,7 @@ def goat_door(prizedoors,guesses):
         
       
 def switch_guess(guesses, goatdoors):
-    choices = set((0,1,2,3,4,5,6,7,8,9))
+    choices = set((0,1,2))
     numbers = []
     for x,y in zip(guesses, goatdoors):
         numbers.append((choices - set((x,y))).pop())
