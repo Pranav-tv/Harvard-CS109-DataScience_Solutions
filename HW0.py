@@ -57,12 +57,3 @@ winning_with_switched_choice = win_percentage(switchedchoice,prizedoors)
 print("\nWinning % with original choice = {}".format(winning_with_original_choice))
 
 print("\nWinning % with switched choice = {}".format(winning_with_switched_choice))
-
-
-
-
-
-
-
-
-
